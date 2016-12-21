@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
  */
 public class Feed {
 
-    @SerializedName("createdAt")
+    @SerializedName("created_at")
     private String createdAt;
     @SerializedName("entryId")
     private Integer entryId;

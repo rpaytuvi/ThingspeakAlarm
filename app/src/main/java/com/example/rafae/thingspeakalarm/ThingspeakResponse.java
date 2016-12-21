@@ -1,19 +1,17 @@
 package com.example.rafae.thingspeakalarm;
 
 import com.google.gson.annotations.SerializedName;
-
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by rafae on 12/14/2016.
  */
-public class ThingspeakResponse<T> {
+public class ThingspeakResponse {
 
     @SerializedName("channel")
     private Channel channel;
     @SerializedName("feeds")
-    private T feeds;
+    private List<Feed> feeds;
 
     public Channel getChannel() {
         return channel;
@@ -23,11 +21,11 @@ public class ThingspeakResponse<T> {
         this.channel = channel;
     }
 
-    public ArrayList<T> getFeeds() {
+    public List<Feed> getFeeds() {
         return feeds;
     }
 
-    public void setFeeds(ArrayList<T> feeds) {
+    public void setFeeds(List<Feed> feeds) {
         this.feeds = feeds;
     }
 }
